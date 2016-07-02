@@ -17,6 +17,8 @@
 #import <Foundation/Foundation.h>
 #import <AFNetworking.h>
 #import <SDWebImage/UIImageView+WebCache.h>
+#import <MJRefresh.h>
+#import <MJExtension.h>
 #endif
 
 // 常用变量
@@ -24,8 +26,11 @@
 
 // 返回的是带有状态栏的 Rect
 #define kScreen_Bounds [UIScreen mainScreen].bounds
+#define kScreen_Height [UIScreen mainScreen].bounds.size.height
+#define kScreen_Width [UIScreen mainScreen].bounds.size.width
 
 #define kColorMain [UIColor colorWithRed:0.93 green:0.26 blue:0.38 alpha:1]
 #define kColorTabbarItemTitleNormal [UIColor colorWithRed:0.66 green:0.71 blue:0.76 alpha:1]
 #define kColorTabbarItemTitleSelected kColorMain
 #define kColorMeizhiCCell [UIColor colorWithWhite:0.9 alpha:1.0].CGColor
+#define kColorMainBG [UIColor colorWithRed:0.95 green:0.95 blue:0.95 alpha:1]

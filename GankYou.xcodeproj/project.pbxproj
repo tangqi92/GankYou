@@ -23,6 +23,7 @@
 		35C819351D27B84D00BC5642 /* ZOZolaZoomTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C819341D27B84D00BC5642 /* ZOZolaZoomTransition.m */; };
 		35C819391D27B8EA00BC5642 /* GankNetAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C819381D27B8EA00BC5642 /* GankNetAPIManager.m */; };
 		35C8193C1D27B8F700BC5642 /* GankNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C8193B1D27B8F700BC5642 /* GankNetAPIClient.m */; };
+		35C8193F1D27DB3200BC5642 /* MeizhiDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C8193E1D27DB3200BC5642 /* MeizhiDetailViewController.m */; };
 		B80B93B48D31181D24B721E1 /* libPods-GankYou.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51905EED053AA0E1610A235E /* libPods-GankYou.a */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,8 @@
 		35C819381D27B8EA00BC5642 /* GankNetAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankNetAPIManager.m; sourceTree = "<group>"; };
 		35C8193A1D27B8F700BC5642 /* GankNetAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankNetAPIClient.h; sourceTree = "<group>"; };
 		35C8193B1D27B8F700BC5642 /* GankNetAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankNetAPIClient.m; sourceTree = "<group>"; };
+		35C8193D1D27DB3200BC5642 /* MeizhiDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeizhiDetailViewController.h; sourceTree = "<group>"; };
+		35C8193E1D27DB3200BC5642 /* MeizhiDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeizhiDetailViewController.m; sourceTree = "<group>"; };
 		51905EED053AA0E1610A235E /* libPods-GankYou.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GankYou.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E55F8172D913DD0DEF228308 /* Pods-GankYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GankYou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GankYou/Pods-GankYou.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -269,6 +272,8 @@
 			children = (
 				35C819231D27894600BC5642 /* MeizhiViewController.h */,
 				35C819241D27894600BC5642 /* MeizhiViewController.m */,
+				35C8193D1D27DB3200BC5642 /* MeizhiDetailViewController.h */,
+				35C8193E1D27DB3200BC5642 /* MeizhiDetailViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -554,6 +559,7 @@
 				35C819281D27895500BC5642 /* GankViewController.m in Sources */,
 				3581E73F1D274F1C00CA7F37 /* main.m in Sources */,
 				35C8192B1D27898000BC5642 /* MineViewController.m in Sources */,
+				35C8193F1D27DB3200BC5642 /* MeizhiDetailViewController.m in Sources */,
 				35C819311D27ABA100BC5642 /* MeizhiCCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

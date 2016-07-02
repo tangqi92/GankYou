@@ -17,21 +17,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = kColorMainBG;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)hideTabBar:(UITabBarController *)tabbarController {
+    [UIView beginAnimations:nil context:NULL];
+    for (UIView *view in tabbarController.view.subviews) {
+        if ([view isKindOfClass:[UITabBar class]]) {
+            [view setFrame:CGRectMake(view.frame.origin.x, kScreen_Height, view.frame.size.width, view.frame.size.height)];
+        } else {
+            [view setFrame:CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.size.width, kScreen_Height)];
+        }
+    }
+    [UIView commitAnimations];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)showTabBar:(UITabBarController *)tabbarController {
+    [UIView beginAnimations:nil context:NULL];
+    for (UIView *view in tabbarController.view.subviews) {
+        if ([view isKindOfClass:[UITabBar class]]) {
+            [view setFrame:CGRectMake(view.frame.origin.x, kScreen_Height - view.frame.size.height, view.frame.size.width, view.frame.size.height)];
+        } else {
+            [view setFrame:CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.size.width, kScreen_Height - view.frame.size.height)];
+        }
+    }
+    [UIView commitAnimations];
 }
-*/
+
+- (void)showHUDWithText:(NSString *)text {
+}
+
+- (void)showHUDWithText:(NSString *)text delay:(NSTimeInterval)delay {
+}
 
 @end

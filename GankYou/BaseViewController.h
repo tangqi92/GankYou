@@ -10,4 +10,16 @@
 
 @interface BaseViewController : UIViewController
 
+/**
+ *  隐藏显示 TabBar
+ */
+- (void)hideTabBar:(UITabBarController *)tabbarController;
+- (void)showTabBar:(UITabBarController *)tabbarController;
+
+/**
+ *  提示相关方法
+ */
+- (void)showHUDWithText:(NSString *)text;
+- (void)showHUDWithText:(NSString *)text delay:(NSTimeInterval)delay;
+
 @end
