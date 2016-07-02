@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "RootTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -22,8 +22,8 @@
     self.window = [[UIWindow alloc] initWithFrame:kScreen_Bounds];
     self.window.backgroundColor =[UIColor whiteColor];
     
-    ViewController *vc = [[ViewController alloc] init];
-    self.window.rootViewController = vc;
+    RootTabBarController *rootTabbar = [[RootTabBarController alloc] init];
+    self.window.rootViewController = rootTabbar;
     
     // 网络状态监测
     [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
