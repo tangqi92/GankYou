@@ -8,8 +8,8 @@
 
 #define kCCellIdentifier_MeizhiCCell @"MeizhiCCell"
 
-#import <UIKit/UIKit.h>
 #import "GankModel.h"
+#import <UIKit/UIKit.h>
 
 @interface MeizhiCCell : UICollectionViewCell
 

@@ -6,10 +6,10 @@
 //  Copyright © 2016 Tang Qi. All rights reserved.
 //
 
-#import "RootTabBarController.h"
-#import "MeizhiViewController.h"
 #import "GankViewController.h"
+#import "MeizhiViewController.h"
 #import "MineViewController.h"
+#import "RootTabBarController.h"
 
 @interface RootTabBarController ()
 

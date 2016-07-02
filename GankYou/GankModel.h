@@ -49,6 +49,6 @@
 /**
  *  妹纸的 Size
  */
-@property(nonatomic, assign) CGSize imageSize;
+@property (nonatomic, assign) CGSize imageSize;
 
 @end

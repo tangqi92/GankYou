@@ -10,7 +10,7 @@
 
 static const NSInteger kPageSize = 10;
 
-@interface MeizhiViewController () 
+@interface MeizhiViewController ()
 
 @end
 
