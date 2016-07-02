@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3581E73F1D274F1C00CA7F37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3581E73E1D274F1C00CA7F37 /* main.m */; };
+		3581E7421D274F1C00CA7F37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3581E7411D274F1C00CA7F37 /* AppDelegate.m */; };
+		3581E7451D274F1C00CA7F37 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3581E7441D274F1C00CA7F37 /* ViewController.m */; };
+		3581E7481D274F1C00CA7F37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3581E7461D274F1C00CA7F37 /* Main.storyboard */; };
+		3581E74A1D274F1C00CA7F37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3581E7491D274F1C00CA7F37 /* Assets.xcassets */; };
+		3581E74D1D274F1C00CA7F37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3581E74B1D274F1C00CA7F37 /* LaunchScreen.storyboard */; };
+		3581E7581D274F1C00CA7F37 /* GankYouTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3581E7571D274F1C00CA7F37 /* GankYouTests.m */; };
+		3581E7631D274F1C00CA7F37 /* GankYouUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3581E7621D274F1C00CA7F37 /* GankYouUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3581E7541D274F1C00CA7F37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3581E7321D274F1C00CA7F37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3581E7391D274F1C00CA7F37;
+			remoteInfo = GankYou;
+		};
+		3581E75F1D274F1C00CA7F37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3581E7321D274F1C00CA7F37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3581E7391D274F1C00CA7F37;
+			remoteInfo = GankYou;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3581E73A1D274F1C00CA7F37 /* GankYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GankYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3581E73E1D274F1C00CA7F37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3581E7401D274F1C00CA7F37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3581E7411D274F1C00CA7F37 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3581E7431D274F1C00CA7F37 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3581E7441D274F1C00CA7F37 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3581E7471D274F1C00CA7F37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3581E7491D274F1C00CA7F37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3581E74C1D274F1C00CA7F37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3581E74E1D274F1C00CA7F37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3581E7531D274F1C00CA7F37 /* GankYouTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GankYouTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3581E7571D274F1C00CA7F37 /* GankYouTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GankYouTests.m; sourceTree = "<group>"; };
+		3581E7591D274F1C00CA7F37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3581E75E1D274F1C00CA7F37 /* GankYouUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GankYouUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3581E7621D274F1C00CA7F37 /* GankYouUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GankYouUITests.m; sourceTree = "<group>"; };
+		3581E7641D274F1C00CA7F37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3581E7371D274F1C00CA7F37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3581E7501D274F1C00CA7F37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3581E75B1D274F1C00CA7F37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3581E7311D274F1C00CA7F37 = {
+			isa = PBXGroup;
+			children = (
+				3581E73C1D274F1C00CA7F37 /* GankYou */,
+				3581E7561D274F1C00CA7F37 /* GankYouTests */,
+				3581E7611D274F1C00CA7F37 /* GankYouUITests */,
+				3581E73B1D274F1C00CA7F37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3581E73B1D274F1C00CA7F37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3581E73A1D274F1C00CA7F37 /* GankYou.app */,
+				3581E7531D274F1C00CA7F37 /* GankYouTests.xctest */,
+				3581E75E1D274F1C00CA7F37 /* GankYouUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3581E73C1D274F1C00CA7F37 /* GankYou */ = {
+			isa = PBXGroup;
+			children = (
+				3581E7401D274F1C00CA7F37 /* AppDelegate.h */,
+				3581E7411D274F1C00CA7F37 /* AppDelegate.m */,
+				3581E7431D274F1C00CA7F37 /* ViewController.h */,
+				3581E7441D274F1C00CA7F37 /* ViewController.m */,
+				3581E7461D274F1C00CA7F37 /* Main.storyboard */,
+				3581E7491D274F1C00CA7F37 /* Assets.xcassets */,
+				3581E74B1D274F1C00CA7F37 /* LaunchScreen.storyboard */,
+				3581E74E1D274F1C00CA7F37 /* Info.plist */,
+				3581E73D1D274F1C00CA7F37 /* Supporting Files */,
+			);
+			path = GankYou;
+			sourceTree = "<group>";
+		};
+		3581E73D1D274F1C00CA7F37 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3581E73E1D274F1C00CA7F37 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3581E7561D274F1C00CA7F37 /* GankYouTests */ = {
+			isa = PBXGroup;
+			children = (
+				3581E7571D274F1C00CA7F37 /* GankYouTests.m */,
+				3581E7591D274F1C00CA7F37 /* Info.plist */,
+			);
+			path = GankYouTests;
+			sourceTree = "<group>";
+		};
+		3581E7611D274F1C00CA7F37 /* GankYouUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3581E7621D274F1C00CA7F37 /* GankYouUITests.m */,
+				3581E7641D274F1C00CA7F37 /* Info.plist */,
+			);
+			path = GankYouUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3581E7391D274F1C00CA7F37 /* GankYou */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3581E7671D274F1C00CA7F37 /* Build configuration list for PBXNativeTarget "GankYou" */;
+			buildPhases = (
+				3581E7361D274F1C00CA7F37 /* Sources */,
+				3581E7371D274F1C00CA7F37 /* Frameworks */,
+				3581E7381D274F1C00CA7F37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GankYou;
+			productName = GankYou;
+			productReference = 3581E73A1D274F1C00CA7F37 /* GankYou.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3581E7521D274F1C00CA7F37 /* GankYouTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3581E76A1D274F1C00CA7F37 /* Build configuration list for PBXNativeTarget "GankYouTests" */;
+			buildPhases = (
+				3581E74F1D274F1C00CA7F37 /* Sources */,
+				3581E7501D274F1C00CA7F37 /* Frameworks */,
+				3581E7511D274F1C00CA7F37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3581E7551D274F1C00CA7F37 /* PBXTargetDependency */,
+			);
+			name = GankYouTests;
+			productName = GankYouTests;
+			productReference = 3581E7531D274F1C00CA7F37 /* GankYouTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3581E75D1D274F1C00CA7F37 /* GankYouUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3581E76D1D274F1C00CA7F37 /* Build configuration list for PBXNativeTarget "GankYouUITests" */;
+			buildPhases = (
+				3581E75A1D274F1C00CA7F37 /* Sources */,
+				3581E75B1D274F1C00CA7F37 /* Frameworks */,
+				3581E75C1D274F1C00CA7F37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3581E7601D274F1C00CA7F37 /* PBXTargetDependency */,
+			);
+			name = GankYouUITests;
+			productName = GankYouUITests;
+			productReference = 3581E75E1D274F1C00CA7F37 /* GankYouUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3581E7321D274F1C00CA7F37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Tang Qi";
+				TargetAttributes = {
+					3581E7391D274F1C00CA7F37 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4725AZSKC6;
+					};
+					3581E7521D274F1C00CA7F37 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4725AZSKC6;
+						TestTargetID = 3581E7391D274F1C00CA7F37;
+					};
+					3581E75D1D274F1C00CA7F37 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4725AZSKC6;
+						TestTargetID = 3581E7391D274F1C00CA7F37;
+					};
+				};
+			};
+			buildConfigurationList = 3581E7351D274F1C00CA7F37 /* Build configuration list for PBXProject "GankYou" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3581E7311D274F1C00CA7F37;
+			productRefGroup = 3581E73B1D274F1C00CA7F37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3581E7391D274F1C00CA7F37 /* GankYou */,
+				3581E7521D274F1C00CA7F37 /* GankYouTests */,
+				3581E75D1D274F1C00CA7F37 /* GankYouUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3581E7381D274F1C00CA7F37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3581E74D1D274F1C00CA7F37 /* LaunchScreen.storyboard in Resources */,
+				3581E74A1D274F1C00CA7F37 /* Assets.xcassets in Resources */,
+				3581E7481D274F1C00CA7F37 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3581E7511D274F1C00CA7F37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3581E75C1D274F1C00CA7F37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3581E7361D274F1C00CA7F37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3581E7451D274F1C00CA7F37 /* ViewController.m in Sources */,
+				3581E7421D274F1C00CA7F37 /* AppDelegate.m in Sources */,
+				3581E73F1D274F1C00CA7F37 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3581E74F1D274F1C00CA7F37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3581E7581D274F1C00CA7F37 /* GankYouTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3581E75A1D274F1C00CA7F37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3581E7631D274F1C00CA7F37 /* GankYouUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3581E7551D274F1C00CA7F37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3581E7391D274F1C00CA7F37 /* GankYou */;
+			targetProxy = 3581E7541D274F1C00CA7F37 /* PBXContainerItemProxy */;
+		};
+		3581E7601D274F1C00CA7F37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3581E7391D274F1C00CA7F37 /* GankYou */;
+			targetProxy = 3581E75F1D274F1C00CA7F37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3581E7461D274F1C00CA7F37 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3581E7471D274F1C00CA7F37 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3581E74B1D274F1C00CA7F37 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3581E74C1D274F1C00CA7F37 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3581E7651D274F1C00CA7F37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3581E7661D274F1C00CA7F37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3581E7681D274F1C00CA7F37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GankYou/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.itangqi.GankYou;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3581E7691D274F1C00CA7F37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GankYou/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.itangqi.GankYou;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3581E76B1D274F1C00CA7F37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GankYouTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.itangqi.GankYouTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GankYou.app/GankYou";
+			};
+			name = Debug;
+		};
+		3581E76C1D274F1C00CA7F37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GankYouTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.itangqi.GankYouTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GankYou.app/GankYou";
+			};
+			name = Release;
+		};
+		3581E76E1D274F1C00CA7F37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GankYouUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.itangqi.GankYouUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GankYou;
+			};
+			name = Debug;
+		};
+		3581E76F1D274F1C00CA7F37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GankYouUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.itangqi.GankYouUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GankYou;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3581E7351D274F1C00CA7F37 /* Build configuration list for PBXProject "GankYou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3581E7651D274F1C00CA7F37 /* Debug */,
+				3581E7661D274F1C00CA7F37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3581E7671D274F1C00CA7F37 /* Build configuration list for PBXNativeTarget "GankYou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3581E7681D274F1C00CA7F37 /* Debug */,
+				3581E7691D274F1C00CA7F37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3581E76A1D274F1C00CA7F37 /* Build configuration list for PBXNativeTarget "GankYouTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3581E76B1D274F1C00CA7F37 /* Debug */,
+				3581E76C1D274F1C00CA7F37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3581E76D1D274F1C00CA7F37 /* Build configuration list for PBXNativeTarget "GankYouUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3581E76E1D274F1C00CA7F37 /* Debug */,
+				3581E76F1D274F1C00CA7F37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3581E7321D274F1C00CA7F37 /* Project object */;
+}
