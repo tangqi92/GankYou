@@ -1,0 +1,28 @@
+//
+//  GankYou-Prefix.pch
+//  GankYou
+//
+//  Created by Tang Qi on 7/2/16.
+//  Copyright © 2016 Tang Qi. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <AFNetworking.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#endif
+
+// 常用变量
+#define DebugLog(s, ...) NSLog(@"%s(%d): %@", __FUNCTION__, __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
+
+// 返回的是带有状态栏的 Rect
+#define kScreen_Bounds [UIScreen mainScreen].bounds
+
+#define kColorMain [UIColor colorWithRed:0.93 green:0.26 blue:0.38 alpha:1]

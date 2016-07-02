@@ -10,11 +10,11 @@
 		3581E73F1D274F1C00CA7F37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3581E73E1D274F1C00CA7F37 /* main.m */; };
 		3581E7421D274F1C00CA7F37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3581E7411D274F1C00CA7F37 /* AppDelegate.m */; };
 		3581E7451D274F1C00CA7F37 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3581E7441D274F1C00CA7F37 /* ViewController.m */; };
-		3581E7481D274F1C00CA7F37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3581E7461D274F1C00CA7F37 /* Main.storyboard */; };
 		3581E74A1D274F1C00CA7F37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3581E7491D274F1C00CA7F37 /* Assets.xcassets */; };
 		3581E74D1D274F1C00CA7F37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3581E74B1D274F1C00CA7F37 /* LaunchScreen.storyboard */; };
 		3581E7581D274F1C00CA7F37 /* GankYouTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3581E7571D274F1C00CA7F37 /* GankYouTests.m */; };
 		3581E7631D274F1C00CA7F37 /* GankYouUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3581E7621D274F1C00CA7F37 /* GankYouUITests.m */; };
+		B80B93B48D31181D24B721E1 /* libPods-GankYou.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51905EED053AA0E1610A235E /* libPods-GankYou.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +35,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12942C916A40E01B9CA28D73 /* Pods-GankYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GankYou.release.xcconfig"; path = "Pods/Target Support Files/Pods-GankYou/Pods-GankYou.release.xcconfig"; sourceTree = "<group>"; };
 		3581E73A1D274F1C00CA7F37 /* GankYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GankYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3581E73E1D274F1C00CA7F37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3581E7401D274F1C00CA7F37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3581E7411D274F1C00CA7F37 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3581E7431D274F1C00CA7F37 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3581E7441D274F1C00CA7F37 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3581E7471D274F1C00CA7F37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3581E7491D274F1C00CA7F37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3581E74C1D274F1C00CA7F37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3581E74E1D274F1C00CA7F37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +51,9 @@
 		3581E75E1D274F1C00CA7F37 /* GankYouUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GankYouUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3581E7621D274F1C00CA7F37 /* GankYouUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GankYouUITests.m; sourceTree = "<group>"; };
 		3581E7641D274F1C00CA7F37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3581E7821D27574700CA7F37 /* GankYou-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GankYou-Prefix.pch"; sourceTree = "<group>"; };
+		51905EED053AA0E1610A235E /* libPods-GankYou.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GankYou.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E55F8172D913DD0DEF228308 /* Pods-GankYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GankYou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GankYou/Pods-GankYou.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B80B93B48D31181D24B721E1 /* libPods-GankYou.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3261B3705D0834554DB43648 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E55F8172D913DD0DEF228308 /* Pods-GankYou.debug.xcconfig */,
+				12942C916A40E01B9CA28D73 /* Pods-GankYou.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3581E7311D274F1C00CA7F37 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +98,8 @@
 				3581E7561D274F1C00CA7F37 /* GankYouTests */,
 				3581E7611D274F1C00CA7F37 /* GankYouUITests */,
 				3581E73B1D274F1C00CA7F37 /* Products */,
+				3261B3705D0834554DB43648 /* Pods */,
+				5F005159BB914C71397C54DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +116,20 @@
 		3581E73C1D274F1C00CA7F37 /* GankYou */ = {
 			isa = PBXGroup;
 			children = (
+				3581E77E1D27555900CA7F37 /* Vendor */,
+				3581E77D1D27554D00CA7F37 /* Utility */,
+				3581E77C1D27552C00CA7F37 /* Common */,
+				3581E7781D27550A00CA7F37 /* Meizhi */,
+				3581E7741D2754E800CA7F37 /* Home */,
+				3581E7701D2754C300CA7F37 /* Settings */,
 				3581E7401D274F1C00CA7F37 /* AppDelegate.h */,
 				3581E7411D274F1C00CA7F37 /* AppDelegate.m */,
 				3581E7431D274F1C00CA7F37 /* ViewController.h */,
 				3581E7441D274F1C00CA7F37 /* ViewController.m */,
-				3581E7461D274F1C00CA7F37 /* Main.storyboard */,
 				3581E7491D274F1C00CA7F37 /* Assets.xcassets */,
 				3581E74B1D274F1C00CA7F37 /* LaunchScreen.storyboard */,
 				3581E74E1D274F1C00CA7F37 /* Info.plist */,
+				3581E7821D27574700CA7F37 /* GankYou-Prefix.pch */,
 				3581E73D1D274F1C00CA7F37 /* Supporting Files */,
 			);
 			path = GankYou;
@@ -140,6 +161,128 @@
 			path = GankYouUITests;
 			sourceTree = "<group>";
 		};
+		3581E7701D2754C300CA7F37 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3581E7731D2754DE00CA7F37 /* Model */,
+				3581E7721D2754D700CA7F37 /* View */,
+				3581E7711D2754CD00CA7F37 /* Controller */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		3581E7711D2754CD00CA7F37 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3581E7721D2754D700CA7F37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3581E7731D2754DE00CA7F37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3581E7741D2754E800CA7F37 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3581E7771D27550100CA7F37 /* Model */,
+				3581E7761D2754FC00CA7F37 /* View */,
+				3581E7751D2754F300CA7F37 /* Controller */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		3581E7751D2754F300CA7F37 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3581E7761D2754FC00CA7F37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3581E7771D27550100CA7F37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3581E7781D27550A00CA7F37 /* Meizhi */ = {
+			isa = PBXGroup;
+			children = (
+				3581E77B1D27551A00CA7F37 /* Model */,
+				3581E77A1D27551500CA7F37 /* View */,
+				3581E7791D27550F00CA7F37 /* Controller */,
+			);
+			name = Meizhi;
+			sourceTree = "<group>";
+		};
+		3581E7791D27550F00CA7F37 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3581E77A1D27551500CA7F37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3581E77B1D27551A00CA7F37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3581E77C1D27552C00CA7F37 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		3581E77D1D27554D00CA7F37 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		3581E77E1D27555900CA7F37 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		5F005159BB914C71397C54DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51905EED053AA0E1610A235E /* libPods-GankYou.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +290,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3581E7671D274F1C00CA7F37 /* Build configuration list for PBXNativeTarget "GankYou" */;
 			buildPhases = (
+				EEF89E6BD25C8E6F47AEAB16 /* Check Pods Manifest.lock */,
 				3581E7361D274F1C00CA7F37 /* Sources */,
 				3581E7371D274F1C00CA7F37 /* Frameworks */,
 				3581E7381D274F1C00CA7F37 /* Resources */,
+				D793818BCF9928DED6FE0C94 /* Embed Pods Frameworks */,
+				2A0C862E05DD9B27E7243ACB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,7 +394,6 @@
 			files = (
 				3581E74D1D274F1C00CA7F37 /* LaunchScreen.storyboard in Resources */,
 				3581E74A1D274F1C00CA7F37 /* Assets.xcassets in Resources */,
-				3581E7481D274F1C00CA7F37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +412,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A0C862E05DD9B27E7243ACB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GankYou/Pods-GankYou-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D793818BCF9928DED6FE0C94 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GankYou/Pods-GankYou-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEF89E6BD25C8E6F47AEAB16 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3581E7361D274F1C00CA7F37 /* Sources */ = {
@@ -311,14 +504,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3581E7461D274F1C00CA7F37 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3581E7471D274F1C00CA7F37 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3581E74B1D274F1C00CA7F37 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -367,7 +552,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -405,7 +590,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -414,8 +599,11 @@
 		};
 		3581E7681D274F1C00CA7F37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E55F8172D913DD0DEF228308 /* Pods-GankYou.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GankYou/GankYou-Prefix.pch";
 				INFOPLIST_FILE = GankYou/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.itangqi.GankYou;
@@ -425,8 +613,11 @@
 		};
 		3581E7691D274F1C00CA7F37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12942C916A40E01B9CA28D73 /* Pods-GankYou.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GankYou/GankYou-Prefix.pch";
 				INFOPLIST_FILE = GankYou/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.itangqi.GankYou;
@@ -499,6 +690,7 @@
 				3581E7691D274F1C00CA7F37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3581E76A1D274F1C00CA7F37 /* Build configuration list for PBXNativeTarget "GankYouTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +699,7 @@
 				3581E76C1D274F1C00CA7F37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3581E76D1D274F1C00CA7F37 /* Build configuration list for PBXNativeTarget "GankYouUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +708,7 @@
 				3581E76F1D274F1C00CA7F37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
