@@ -5,6 +5,9 @@ target “GankYou” do
 
 pod 'AFNetworking', '~> 3.1'
 pod 'SDWebImage', '~> 3.7.3'
+pod 'CHTCollectionViewWaterfallLayout', '~> 0.9.2'
+pod 'MJRefresh'
+pod 'MJExtension'
 
 end
 

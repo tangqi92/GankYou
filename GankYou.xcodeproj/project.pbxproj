@@ -18,6 +18,8 @@
 		35C819251D27894600BC5642 /* MeizhiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C819241D27894600BC5642 /* MeizhiViewController.m */; };
 		35C819281D27895500BC5642 /* GankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C819271D27895500BC5642 /* GankViewController.m */; };
 		35C8192B1D27898000BC5642 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C8192A1D27898000BC5642 /* MineViewController.m */; };
+		35C8192E1D27AB2500BC5642 /* GankModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C8192D1D27AB2500BC5642 /* GankModel.m */; };
+		35C819311D27ABA100BC5642 /* MeizhiCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C819301D27ABA100BC5642 /* MeizhiCCell.m */; };
 		B80B93B48D31181D24B721E1 /* libPods-GankYou.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51905EED053AA0E1610A235E /* libPods-GankYou.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,10 @@
 		35C819271D27895500BC5642 /* GankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankViewController.m; sourceTree = "<group>"; };
 		35C819291D27898000BC5642 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		35C8192A1D27898000BC5642 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		35C8192C1D27AB2500BC5642 /* GankModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankModel.h; sourceTree = "<group>"; };
+		35C8192D1D27AB2500BC5642 /* GankModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankModel.m; sourceTree = "<group>"; };
+		35C8192F1D27ABA100BC5642 /* MeizhiCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeizhiCCell.h; sourceTree = "<group>"; };
+		35C819301D27ABA100BC5642 /* MeizhiCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeizhiCCell.m; sourceTree = "<group>"; };
 		51905EED053AA0E1610A235E /* libPods-GankYou.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GankYou.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E55F8172D913DD0DEF228308 /* Pods-GankYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GankYou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GankYou/Pods-GankYou.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -233,6 +239,8 @@
 		3581E7771D27550100CA7F37 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				35C8192C1D27AB2500BC5642 /* GankModel.h */,
+				35C8192D1D27AB2500BC5642 /* GankModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -259,6 +267,8 @@
 		3581E77A1D27551500CA7F37 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				35C8192F1D27ABA100BC5642 /* MeizhiCCell.h */,
+				35C819301D27ABA100BC5642 /* MeizhiCCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -502,6 +512,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35C8192E1D27AB2500BC5642 /* GankModel.m in Sources */,
 				35C819221D2788CD00BC5642 /* BaseViewController.m in Sources */,
 				35C8191E1D27876F00BC5642 /* RootTabBarController.m in Sources */,
 				3581E7421D274F1C00CA7F37 /* AppDelegate.m in Sources */,
@@ -509,6 +520,7 @@
 				35C819281D27895500BC5642 /* GankViewController.m in Sources */,
 				3581E73F1D274F1C00CA7F37 /* main.m in Sources */,
 				35C8192B1D27898000BC5642 /* MineViewController.m in Sources */,
+				35C819311D27ABA100BC5642 /* MeizhiCCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

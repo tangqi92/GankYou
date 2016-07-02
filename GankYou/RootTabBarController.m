@@ -58,16 +58,16 @@
  *  只会调用一次
  */
 + (void)initialize {
-    // 文字的属性
-    NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
-    attrs[NSForegroundColorAttributeName] = kColorTabbarItemTitle;
+    // 文字选择颜色
+    NSMutableDictionary *normalAttrs = [NSMutableDictionary dictionary];
+    normalAttrs[NSForegroundColorAttributeName] = kColorTabbarItemTitleNormal;
 
     NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
-    selectedAttrs[NSForegroundColorAttributeName] = kColorMain;
+    selectedAttrs[NSForegroundColorAttributeName] = kColorTabbarItemTitleSelected;
 
     // 通过 appearance 设置字体
     UITabBarItem *item = [UITabBarItem appearance];
-    [item setTitleTextAttributes:attrs forState:UIControlStateNormal];
+    [item setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
     [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
 }
 
