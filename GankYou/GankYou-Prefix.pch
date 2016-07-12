@@ -19,6 +19,7 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <MJRefresh.h>
 #import <MJExtension.h>
+#import <Masonry/Masonry.h>
 #endif
 
 // 常用变量

@@ -8,6 +8,7 @@ pod 'SDWebImage', '~> 3.7.3'
 pod 'CHTCollectionViewWaterfallLayout', '~> 0.9.2'
 pod 'MJRefresh'
 pod 'MJExtension'
+pod 'Masonry'
 
 end
 

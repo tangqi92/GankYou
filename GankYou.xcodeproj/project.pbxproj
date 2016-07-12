@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		357C72251D34866B0017D004 /* GankCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C72241D34866B0017D004 /* GankCell.m */; };
 		3581E73F1D274F1C00CA7F37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3581E73E1D274F1C00CA7F37 /* main.m */; };
 		3581E7421D274F1C00CA7F37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3581E7411D274F1C00CA7F37 /* AppDelegate.m */; };
 		3581E74A1D274F1C00CA7F37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3581E7491D274F1C00CA7F37 /* Assets.xcassets */; };
@@ -46,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		12942C916A40E01B9CA28D73 /* Pods-GankYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GankYou.release.xcconfig"; path = "Pods/Target Support Files/Pods-GankYou/Pods-GankYou.release.xcconfig"; sourceTree = "<group>"; };
+		357C72231D34866B0017D004 /* GankCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankCell.h; sourceTree = "<group>"; };
+		357C72241D34866B0017D004 /* GankCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankCell.m; sourceTree = "<group>"; };
 		3581E73A1D274F1C00CA7F37 /* GankYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GankYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3581E73E1D274F1C00CA7F37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3581E7401D274F1C00CA7F37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -244,6 +247,8 @@
 		3581E7761D2754FC00CA7F37 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				357C72231D34866B0017D004 /* GankCell.h */,
+				357C72241D34866B0017D004 /* GankCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -558,6 +563,7 @@
 				35C819251D27894600BC5642 /* MeizhiViewController.m in Sources */,
 				35C819281D27895500BC5642 /* GankViewController.m in Sources */,
 				3581E73F1D274F1C00CA7F37 /* main.m in Sources */,
+				357C72251D34866B0017D004 /* GankCell.m in Sources */,
 				35C8192B1D27898000BC5642 /* MineViewController.m in Sources */,
 				35C8193F1D27DB3200BC5642 /* MeizhiDetailViewController.m in Sources */,
 				35C819311D27ABA100BC5642 /* MeizhiCCell.m in Sources */,
