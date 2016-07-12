@@ -10,9 +10,11 @@ GankYou
 
 ## Screenshots - 预览
 
-- 稍后补充...
+<img src="Screenshots/SS01.png"  width="270" height="486" />  <img src="Screenshots/SS02.png" width="270" height="486" />
 
+<img src="Screenshots/SS03.png"  width="270" height="486" />  <img src="Screenshots/SS04.png" width="270" height="486" />
 
+<img src="Screenshots/SS05.png"  width="270" height="486" />  <img src="Screenshots/SS06.png" width="270" height="486" />
 
 ## Installation - 安装
 
