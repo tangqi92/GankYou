@@ -17,10 +17,10 @@
 
 @end
 
-static NSString *CellHasSwitchID = @"HasSwitchCell";
-static NSString *CellHasDIID = @"HasDICell"; // DI -> DisclosureIndicator
-static NSString *CellHasSecondLabelID = @"HasSecondLabelCell";
-static NSString *CellLogOutID = @"LogOutCell";
+static NSString *const kCellHasSwitchID = @"HasSwitchCell";
+static NSString *const kCellHasDIID = @"HasDICell"; // DI -> DisclosureIndicator
+static NSString *const kCellHasSecondLabelID = @"HasSecondLabelCell";
+static NSString *const kCellLogOutID = @"LogOutCell";
 
 @implementation SettingsController
 
@@ -44,10 +44,10 @@ static NSString *CellLogOutID = @"LogOutCell";
     _tableView.dataSource = self;
     _tableView.delegate = self;
     
-    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CellHasSwitchID];
-    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CellHasDIID];
-    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CellHasSecondLabelID];
-    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CellLogOutID];
+    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellHasSwitchID];
+    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellHasDIID];
+    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellHasSecondLabelID];
+    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellLogOutID];
     
     [self.view addSubview:_tableView];
     
@@ -82,20 +82,20 @@ static NSString *CellLogOutID = @"LogOutCell";
     
     switch (indexPath.section) {
         case 0:
-            cellID = CellHasSwitchID;
+            cellID = kCellHasSwitchID;
             break;
         case 1:
-            cellID = CellHasSecondLabelID;
+            cellID = kCellHasSecondLabelID;
             break;
         case 2: {
             if (indexPath.row < 3) {
-                cellID = CellHasDIID;
+                cellID = kCellHasDIID;
             } else {
-                cellID = CellHasSecondLabelID;
+                cellID = kCellHasSecondLabelID;
             }
         } break;
         case 3:
-            cellID = CellLogOutID;
+            cellID = kCellLogOutID;
             break;
     }
     

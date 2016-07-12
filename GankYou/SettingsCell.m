@@ -42,10 +42,9 @@
 }
 
 + (instancetype)cellWithTableView:(UITableView *)tableView {
-    static NSString *ID = @"cell";
-    SettingsCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    SettingsCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier_SettingsCell];
     if (cell == nil) {
-        cell = [[SettingsCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+        cell = [[SettingsCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kCellIdentifier_SettingsCell];
     }
     return cell;
 }

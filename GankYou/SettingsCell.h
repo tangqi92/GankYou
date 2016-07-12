@@ -6,6 +6,8 @@
 //  Copyright © 2016 Tang Qi. All rights reserved.
 //
 
+#define kCellIdentifier_SettingsCell @"SettingsCell"
+
 #import <UIKit/UIKit.h>
 @class JLSettingItem;
 
