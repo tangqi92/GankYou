@@ -7,7 +7,8 @@
 //
 
 #import "BaseViewController.h"
+#import "WMPageController.h"
 
-@interface GankViewController : BaseViewController
+@interface GankViewController : WMPageController
 
 @end
