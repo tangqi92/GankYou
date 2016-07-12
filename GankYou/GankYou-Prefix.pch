@@ -33,5 +33,6 @@
 #define kColorMain [UIColor colorWithRed:0.93 green:0.26 blue:0.38 alpha:1]
 #define kColorTabbarItemTitleNormal [UIColor colorWithRed:0.66 green:0.71 blue:0.76 alpha:1]
 #define kColorTabbarItemTitleSelected kColorMain
+#define kColorTitleColorNormal kColorMain
 #define kColorMeizhiCCell [UIColor colorWithWhite:0.9 alpha:1.0].CGColor
 #define kColorMainBG [UIColor colorWithRed:0.95 green:0.95 blue:0.95 alpha:1]

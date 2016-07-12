@@ -9,6 +9,7 @@ pod 'CHTCollectionViewWaterfallLayout', '~> 0.9.2'
 pod 'MJRefresh'
 pod 'MJExtension'
 pod 'Masonry'
+pod 'WMPageController'
 
 end
 
