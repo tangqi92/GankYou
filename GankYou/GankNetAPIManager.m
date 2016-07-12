@@ -27,9 +27,9 @@ static GankNetAPIManager *manager = nil;
                           failure:(requestFailureBlock)failure {
     // 获取网络数据
     NSString *urlEnCode = [NSString stringWithFormat:@"http://gank.io/api/data/%@/%zd/%zd", type, pageSize, pageIndex];
-    DebugLog(@"--------url--------%@", urlEnCode);
+    DebugLog(@"URL: %@", urlEnCode);
     [[GankNetAPIClient sharedManager] requestJsonDataWithPath:urlEnCode withParams:nil withMethodType:GET withSuccess:^(NSDictionary *dic) {
-        DebugLog(@"--------success--------%@", dic);
+        DebugLog(@"Success: %@", dic);
         success(dic);
     }
         withFailure:^(NSError *error) {
