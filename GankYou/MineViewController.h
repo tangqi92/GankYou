@@ -6,8 +6,8 @@
 //  Copyright © 2016 Tang Qi. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "JLBaseViewController.h"
 
-@interface MineViewController : BaseViewController
+@interface MineViewController : JLBaseViewController
 
 @end
