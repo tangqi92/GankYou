@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3566C99E1D349DEF00C934A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3566C99D1D349DEF00C934A8 /* Images.xcassets */; };
 		357C72251D34866B0017D004 /* GankCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C72241D34866B0017D004 /* GankCell.m */; };
 		357C72281D348A7F0017D004 /* GankTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C72271D348A7F0017D004 /* GankTableViewController.m */; };
 		357C722B1D348AEA0017D004 /* GankWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C722A1D348AEA0017D004 /* GankWebViewController.m */; };
@@ -63,7 +62,6 @@
 
 /* Begin PBXFileReference section */
 		12942C916A40E01B9CA28D73 /* Pods-GankYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GankYou.release.xcconfig"; path = "Pods/Target Support Files/Pods-GankYou/Pods-GankYou.release.xcconfig"; sourceTree = "<group>"; };
-		3566C99D1D349DEF00C934A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		357C72231D34866B0017D004 /* GankCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankCell.h; sourceTree = "<group>"; };
 		357C72241D34866B0017D004 /* GankCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankCell.m; sourceTree = "<group>"; };
 		357C72261D348A7F0017D004 /* GankTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankTableViewController.h; sourceTree = "<group>"; };
@@ -243,7 +241,6 @@
 				3581E74B1D274F1C00CA7F37 /* LaunchScreen.storyboard */,
 				3581E74E1D274F1C00CA7F37 /* Info.plist */,
 				3581E7821D27574700CA7F37 /* GankYou-Prefix.pch */,
-				3566C99D1D349DEF00C934A8 /* Images.xcassets */,
 				3581E73D1D274F1C00CA7F37 /* Supporting Files */,
 			);
 			path = GankYou;
@@ -583,7 +580,6 @@
 			files = (
 				3581E74D1D274F1C00CA7F37 /* LaunchScreen.storyboard in Resources */,
 				3581E74A1D274F1C00CA7F37 /* Assets.xcassets in Resources */,
-				3566C99E1D349DEF00C934A8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -818,7 +814,6 @@
 			baseConfigurationReference = E55F8172D913DD0DEF228308 /* Pods-GankYou.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GankYou/GankYou-Prefix.pch";
 				INFOPLIST_FILE = GankYou/Info.plist;
@@ -833,7 +828,6 @@
 			baseConfigurationReference = 12942C916A40E01B9CA28D73 /* Pods-GankYou.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GankYou/GankYou-Prefix.pch";
 				INFOPLIST_FILE = GankYou/Info.plist;
