@@ -7,11 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3566C99E1D349DEF00C934A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3566C99D1D349DEF00C934A8 /* Images.xcassets */; };
 		357C72251D34866B0017D004 /* GankCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C72241D34866B0017D004 /* GankCell.m */; };
 		357C72281D348A7F0017D004 /* GankTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C72271D348A7F0017D004 /* GankTableViewController.m */; };
 		357C722B1D348AEA0017D004 /* GankWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C722A1D348AEA0017D004 /* GankWebViewController.m */; };
 		357C72311D348B540017D004 /* HXWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C722E1D348B540017D004 /* HXWebView.m */; };
 		357C72321D348B540017D004 /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C72301D348B540017D004 /* NJKWebViewProgress.m */; };
+		357C723C1D3497770017D004 /* JLSettingArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C72351D3497770017D004 /* JLSettingArrowItem.m */; };
+		357C723D1D3497770017D004 /* JLSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C72371D3497770017D004 /* JLSettingGroup.m */; };
+		357C723E1D3497770017D004 /* JLSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C72391D3497770017D004 /* JLSettingItem.m */; };
+		357C723F1D3497770017D004 /* JLSettingSwitchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C723B1D3497770017D004 /* JLSettingSwitchItem.m */; };
+		357C72421D3497880017D004 /* Pods.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C72411D3497880017D004 /* Pods.m */; };
+		357C72451D3498720017D004 /* SettingsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C72441D3498720017D004 /* SettingsCell.m */; };
+		357C72481D3498BC0017D004 /* PodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C72471D3498BC0017D004 /* PodsCell.m */; };
+		357C724B1D3499AB0017D004 /* PodsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C724A1D3499AB0017D004 /* PodsController.m */; };
+		357C724E1D349A4C0017D004 /* JLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C724D1D349A4C0017D004 /* JLBaseViewController.m */; };
+		357C72521D349AA70017D004 /* UIScrollView+PullBig.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C72511D349AA70017D004 /* UIScrollView+PullBig.m */; };
+		357C72551D349AFA0017D004 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C72541D349AFA0017D004 /* SettingsController.m */; };
 		3581E73F1D274F1C00CA7F37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3581E73E1D274F1C00CA7F37 /* main.m */; };
 		3581E7421D274F1C00CA7F37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3581E7411D274F1C00CA7F37 /* AppDelegate.m */; };
 		3581E74A1D274F1C00CA7F37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3581E7491D274F1C00CA7F37 /* Assets.xcassets */; };
@@ -51,6 +63,7 @@
 
 /* Begin PBXFileReference section */
 		12942C916A40E01B9CA28D73 /* Pods-GankYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GankYou.release.xcconfig"; path = "Pods/Target Support Files/Pods-GankYou/Pods-GankYou.release.xcconfig"; sourceTree = "<group>"; };
+		3566C99D1D349DEF00C934A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		357C72231D34866B0017D004 /* GankCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankCell.h; sourceTree = "<group>"; };
 		357C72241D34866B0017D004 /* GankCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankCell.m; sourceTree = "<group>"; };
 		357C72261D348A7F0017D004 /* GankTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankTableViewController.h; sourceTree = "<group>"; };
@@ -61,6 +74,28 @@
 		357C722E1D348B540017D004 /* HXWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXWebView.m; sourceTree = "<group>"; };
 		357C722F1D348B540017D004 /* NJKWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgress.h; sourceTree = "<group>"; };
 		357C72301D348B540017D004 /* NJKWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgress.m; sourceTree = "<group>"; };
+		357C72341D3497770017D004 /* JLSettingArrowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLSettingArrowItem.h; sourceTree = "<group>"; };
+		357C72351D3497770017D004 /* JLSettingArrowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLSettingArrowItem.m; sourceTree = "<group>"; };
+		357C72361D3497770017D004 /* JLSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLSettingGroup.h; sourceTree = "<group>"; };
+		357C72371D3497770017D004 /* JLSettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLSettingGroup.m; sourceTree = "<group>"; };
+		357C72381D3497770017D004 /* JLSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLSettingItem.h; sourceTree = "<group>"; };
+		357C72391D3497770017D004 /* JLSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLSettingItem.m; sourceTree = "<group>"; };
+		357C723A1D3497770017D004 /* JLSettingSwitchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLSettingSwitchItem.h; sourceTree = "<group>"; };
+		357C723B1D3497770017D004 /* JLSettingSwitchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLSettingSwitchItem.m; sourceTree = "<group>"; };
+		357C72401D3497880017D004 /* Pods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pods.h; sourceTree = "<group>"; };
+		357C72411D3497880017D004 /* Pods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pods.m; sourceTree = "<group>"; };
+		357C72431D3498720017D004 /* SettingsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsCell.h; sourceTree = "<group>"; };
+		357C72441D3498720017D004 /* SettingsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsCell.m; sourceTree = "<group>"; };
+		357C72461D3498BC0017D004 /* PodsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodsCell.h; sourceTree = "<group>"; };
+		357C72471D3498BC0017D004 /* PodsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PodsCell.m; sourceTree = "<group>"; };
+		357C72491D3499AB0017D004 /* PodsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodsController.h; sourceTree = "<group>"; };
+		357C724A1D3499AB0017D004 /* PodsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PodsController.m; sourceTree = "<group>"; };
+		357C724C1D349A4C0017D004 /* JLBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLBaseViewController.h; sourceTree = "<group>"; };
+		357C724D1D349A4C0017D004 /* JLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLBaseViewController.m; sourceTree = "<group>"; };
+		357C72501D349AA70017D004 /* UIScrollView+PullBig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+PullBig.h"; sourceTree = "<group>"; };
+		357C72511D349AA70017D004 /* UIScrollView+PullBig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+PullBig.m"; sourceTree = "<group>"; };
+		357C72531D349AFA0017D004 /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
+		357C72541D349AFA0017D004 /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
 		3581E73A1D274F1C00CA7F37 /* GankYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GankYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3581E73E1D274F1C00CA7F37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3581E7401D274F1C00CA7F37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -147,6 +182,30 @@
 			name = HXWebView;
 			sourceTree = "<group>";
 		};
+		357C72331D3497540017D004 /* JLSetting */ = {
+			isa = PBXGroup;
+			children = (
+				357C72341D3497770017D004 /* JLSettingArrowItem.h */,
+				357C72351D3497770017D004 /* JLSettingArrowItem.m */,
+				357C72361D3497770017D004 /* JLSettingGroup.h */,
+				357C72371D3497770017D004 /* JLSettingGroup.m */,
+				357C72381D3497770017D004 /* JLSettingItem.h */,
+				357C72391D3497770017D004 /* JLSettingItem.m */,
+				357C723A1D3497770017D004 /* JLSettingSwitchItem.h */,
+				357C723B1D3497770017D004 /* JLSettingSwitchItem.m */,
+			);
+			name = JLSetting;
+			sourceTree = "<group>";
+		};
+		357C724F1D349A860017D004 /* PullBigView */ = {
+			isa = PBXGroup;
+			children = (
+				357C72501D349AA70017D004 /* UIScrollView+PullBig.h */,
+				357C72511D349AA70017D004 /* UIScrollView+PullBig.m */,
+			);
+			name = PullBigView;
+			sourceTree = "<group>";
+		};
 		3581E7311D274F1C00CA7F37 = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +243,7 @@
 				3581E74B1D274F1C00CA7F37 /* LaunchScreen.storyboard */,
 				3581E74E1D274F1C00CA7F37 /* Info.plist */,
 				3581E7821D27574700CA7F37 /* GankYou-Prefix.pch */,
+				3566C99D1D349DEF00C934A8 /* Images.xcassets */,
 				3581E73D1D274F1C00CA7F37 /* Supporting Files */,
 			);
 			path = GankYou;
@@ -228,8 +288,14 @@
 		3581E7711D2754CD00CA7F37 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				357C724C1D349A4C0017D004 /* JLBaseViewController.h */,
+				357C724D1D349A4C0017D004 /* JLBaseViewController.m */,
 				35C819291D27898000BC5642 /* MineViewController.h */,
 				35C8192A1D27898000BC5642 /* MineViewController.m */,
+				357C72491D3499AB0017D004 /* PodsController.h */,
+				357C724A1D3499AB0017D004 /* PodsController.m */,
+				357C72531D349AFA0017D004 /* SettingsController.h */,
+				357C72541D349AFA0017D004 /* SettingsController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -237,6 +303,10 @@
 		3581E7721D2754D700CA7F37 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				357C72431D3498720017D004 /* SettingsCell.h */,
+				357C72441D3498720017D004 /* SettingsCell.m */,
+				357C72461D3498BC0017D004 /* PodsCell.h */,
+				357C72471D3498BC0017D004 /* PodsCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -244,6 +314,8 @@
 		3581E7731D2754DE00CA7F37 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				357C72401D3497880017D004 /* Pods.h */,
+				357C72411D3497880017D004 /* Pods.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -347,6 +419,8 @@
 		3581E77E1D27555900CA7F37 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				357C724F1D349A860017D004 /* PullBigView */,
+				357C72331D3497540017D004 /* JLSetting */,
 				357C722C1D348B3A0017D004 /* HXWebView */,
 			);
 			name = Vendor;
@@ -509,6 +583,7 @@
 			files = (
 				3581E74D1D274F1C00CA7F37 /* LaunchScreen.storyboard in Resources */,
 				3581E74A1D274F1C00CA7F37 /* Assets.xcassets in Resources */,
+				3566C99E1D349DEF00C934A8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,24 +656,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				357C72481D3498BC0017D004 /* PodsCell.m in Sources */,
+				357C723E1D3497770017D004 /* JLSettingItem.m in Sources */,
 				357C722B1D348AEA0017D004 /* GankWebViewController.m in Sources */,
+				357C72451D3498720017D004 /* SettingsCell.m in Sources */,
 				35C819391D27B8EA00BC5642 /* GankNetAPIManager.m in Sources */,
 				357C72311D348B540017D004 /* HXWebView.m in Sources */,
 				35C8192E1D27AB2500BC5642 /* GankModel.m in Sources */,
+				357C72521D349AA70017D004 /* UIScrollView+PullBig.m in Sources */,
+				357C723D1D3497770017D004 /* JLSettingGroup.m in Sources */,
 				35C819221D2788CD00BC5642 /* BaseViewController.m in Sources */,
 				35C8191E1D27876F00BC5642 /* RootTabBarController.m in Sources */,
 				3581E7421D274F1C00CA7F37 /* AppDelegate.m in Sources */,
+				357C72421D3497880017D004 /* Pods.m in Sources */,
 				35C819351D27B84D00BC5642 /* ZOZolaZoomTransition.m in Sources */,
+				357C724B1D3499AB0017D004 /* PodsController.m in Sources */,
 				357C72281D348A7F0017D004 /* GankTableViewController.m in Sources */,
 				35C8193C1D27B8F700BC5642 /* GankNetAPIClient.m in Sources */,
 				35C819251D27894600BC5642 /* MeizhiViewController.m in Sources */,
 				35C819281D27895500BC5642 /* GankViewController.m in Sources */,
 				3581E73F1D274F1C00CA7F37 /* main.m in Sources */,
 				357C72251D34866B0017D004 /* GankCell.m in Sources */,
+				357C72551D349AFA0017D004 /* SettingsController.m in Sources */,
 				35C8192B1D27898000BC5642 /* MineViewController.m in Sources */,
 				35C8193F1D27DB3200BC5642 /* MeizhiDetailViewController.m in Sources */,
 				357C72321D348B540017D004 /* NJKWebViewProgress.m in Sources */,
+				357C724E1D349A4C0017D004 /* JLBaseViewController.m in Sources */,
+				357C723F1D3497770017D004 /* JLSettingSwitchItem.m in Sources */,
 				35C819311D27ABA100BC5642 /* MeizhiCCell.m in Sources */,
+				357C723C1D3497770017D004 /* JLSettingArrowItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -732,6 +818,7 @@
 			baseConfigurationReference = E55F8172D913DD0DEF228308 /* Pods-GankYou.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GankYou/GankYou-Prefix.pch";
 				INFOPLIST_FILE = GankYou/Info.plist;
@@ -746,6 +833,7 @@
 			baseConfigurationReference = 12942C916A40E01B9CA28D73 /* Pods-GankYou.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GankYou/GankYou-Prefix.pch";
 				INFOPLIST_FILE = GankYou/Info.plist;
