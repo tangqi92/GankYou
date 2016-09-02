@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		357C72251D34866B0017D004 /* GankCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C72241D34866B0017D004 /* GankCell.m */; };
 		357C72281D348A7F0017D004 /* GankTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C72271D348A7F0017D004 /* GankTableViewController.m */; };
-		357C722B1D348AEA0017D004 /* GankWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C722A1D348AEA0017D004 /* GankWebViewController.m */; };
-		357C72311D348B540017D004 /* HXWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C722E1D348B540017D004 /* HXWebView.m */; };
-		357C72321D348B540017D004 /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C72301D348B540017D004 /* NJKWebViewProgress.m */; };
 		357C723C1D3497770017D004 /* JLSettingArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C72351D3497770017D004 /* JLSettingArrowItem.m */; };
 		357C723D1D3497770017D004 /* JLSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C72371D3497770017D004 /* JLSettingGroup.m */; };
 		357C723E1D3497770017D004 /* JLSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C72391D3497770017D004 /* JLSettingItem.m */; };
@@ -40,6 +37,8 @@
 		35C819391D27B8EA00BC5642 /* GankNetAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C819381D27B8EA00BC5642 /* GankNetAPIManager.m */; };
 		35C8193C1D27B8F700BC5642 /* GankNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C8193B1D27B8F700BC5642 /* GankNetAPIClient.m */; };
 		35C8193F1D27DB3200BC5642 /* MeizhiDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C8193E1D27DB3200BC5642 /* MeizhiDetailViewController.m */; };
+		35DDB2711D79614F00D8DE17 /* GankWebBroswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DDB2701D79614F00D8DE17 /* GankWebBroswer.m */; };
+		35DDB27B1D7965F700D8DE17 /* UIViewController+TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DDB27A1D7965F700D8DE17 /* UIViewController+TopViewController.m */; };
 		B80B93B48D31181D24B721E1 /* libPods-GankYou.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51905EED053AA0E1610A235E /* libPods-GankYou.a */; };
 /* End PBXBuildFile section */
 
@@ -66,12 +65,6 @@
 		357C72241D34866B0017D004 /* GankCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankCell.m; sourceTree = "<group>"; };
 		357C72261D348A7F0017D004 /* GankTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankTableViewController.h; sourceTree = "<group>"; };
 		357C72271D348A7F0017D004 /* GankTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankTableViewController.m; sourceTree = "<group>"; };
-		357C72291D348AEA0017D004 /* GankWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankWebViewController.h; sourceTree = "<group>"; };
-		357C722A1D348AEA0017D004 /* GankWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankWebViewController.m; sourceTree = "<group>"; };
-		357C722D1D348B540017D004 /* HXWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXWebView.h; sourceTree = "<group>"; };
-		357C722E1D348B540017D004 /* HXWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXWebView.m; sourceTree = "<group>"; };
-		357C722F1D348B540017D004 /* NJKWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgress.h; sourceTree = "<group>"; };
-		357C72301D348B540017D004 /* NJKWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgress.m; sourceTree = "<group>"; };
 		357C72341D3497770017D004 /* JLSettingArrowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLSettingArrowItem.h; sourceTree = "<group>"; };
 		357C72351D3497770017D004 /* JLSettingArrowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLSettingArrowItem.m; sourceTree = "<group>"; };
 		357C72361D3497770017D004 /* JLSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLSettingGroup.h; sourceTree = "<group>"; };
@@ -130,6 +123,10 @@
 		35C8193B1D27B8F700BC5642 /* GankNetAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankNetAPIClient.m; sourceTree = "<group>"; };
 		35C8193D1D27DB3200BC5642 /* MeizhiDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeizhiDetailViewController.h; sourceTree = "<group>"; };
 		35C8193E1D27DB3200BC5642 /* MeizhiDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeizhiDetailViewController.m; sourceTree = "<group>"; };
+		35DDB26F1D79614F00D8DE17 /* GankWebBroswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GankWebBroswer.h; sourceTree = "<group>"; };
+		35DDB2701D79614F00D8DE17 /* GankWebBroswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GankWebBroswer.m; sourceTree = "<group>"; };
+		35DDB2791D7965F700D8DE17 /* UIViewController+TopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TopViewController.h"; sourceTree = "<group>"; };
+		35DDB27A1D7965F700D8DE17 /* UIViewController+TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TopViewController.m"; sourceTree = "<group>"; };
 		51905EED053AA0E1610A235E /* libPods-GankYou.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GankYou.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E55F8172D913DD0DEF228308 /* Pods-GankYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GankYou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GankYou/Pods-GankYou.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,17 +164,6 @@
 				12942C916A40E01B9CA28D73 /* Pods-GankYou.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		357C722C1D348B3A0017D004 /* HXWebView */ = {
-			isa = PBXGroup;
-			children = (
-				357C722D1D348B540017D004 /* HXWebView.h */,
-				357C722E1D348B540017D004 /* HXWebView.m */,
-				357C722F1D348B540017D004 /* NJKWebViewProgress.h */,
-				357C72301D348B540017D004 /* NJKWebViewProgress.m */,
-			);
-			name = HXWebView;
 			sourceTree = "<group>";
 		};
 		357C72331D3497540017D004 /* JLSetting */ = {
@@ -229,6 +215,7 @@
 		3581E73C1D274F1C00CA7F37 /* GankYou */ = {
 			isa = PBXGroup;
 			children = (
+				35DDB2721D7963FF00D8DE17 /* Categories */,
 				3581E77E1D27555900CA7F37 /* Vendor */,
 				3581E77D1D27554D00CA7F37 /* Utility */,
 				3581E77C1D27552C00CA7F37 /* Common */,
@@ -334,8 +321,8 @@
 				35C819271D27895500BC5642 /* GankViewController.m */,
 				357C72261D348A7F0017D004 /* GankTableViewController.h */,
 				357C72271D348A7F0017D004 /* GankTableViewController.m */,
-				357C72291D348AEA0017D004 /* GankWebViewController.h */,
-				357C722A1D348AEA0017D004 /* GankWebViewController.m */,
+				35DDB26F1D79614F00D8DE17 /* GankWebBroswer.h */,
+				35DDB2701D79614F00D8DE17 /* GankWebBroswer.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -418,7 +405,6 @@
 			children = (
 				357C724F1D349A860017D004 /* PullBigView */,
 				357C72331D3497540017D004 /* JLSetting */,
-				357C722C1D348B3A0017D004 /* HXWebView */,
 			);
 			name = Vendor;
 			sourceTree = "<group>";
@@ -459,6 +445,15 @@
 				35C819381D27B8EA00BC5642 /* GankNetAPIManager.m */,
 			);
 			name = Network;
+			sourceTree = "<group>";
+		};
+		35DDB2721D7963FF00D8DE17 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				35DDB2791D7965F700D8DE17 /* UIViewController+TopViewController.h */,
+				35DDB27A1D7965F700D8DE17 /* UIViewController+TopViewController.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		5F005159BB914C71397C54DC /* Frameworks */ = {
@@ -654,15 +649,15 @@
 			files = (
 				357C72481D3498BC0017D004 /* PodsCell.m in Sources */,
 				357C723E1D3497770017D004 /* JLSettingItem.m in Sources */,
-				357C722B1D348AEA0017D004 /* GankWebViewController.m in Sources */,
 				357C72451D3498720017D004 /* SettingsCell.m in Sources */,
 				35C819391D27B8EA00BC5642 /* GankNetAPIManager.m in Sources */,
-				357C72311D348B540017D004 /* HXWebView.m in Sources */,
 				35C8192E1D27AB2500BC5642 /* GankModel.m in Sources */,
 				357C72521D349AA70017D004 /* UIScrollView+PullBig.m in Sources */,
 				357C723D1D3497770017D004 /* JLSettingGroup.m in Sources */,
+				35DDB27B1D7965F700D8DE17 /* UIViewController+TopViewController.m in Sources */,
 				35C819221D2788CD00BC5642 /* BaseViewController.m in Sources */,
 				35C8191E1D27876F00BC5642 /* RootTabBarController.m in Sources */,
+				35DDB2711D79614F00D8DE17 /* GankWebBroswer.m in Sources */,
 				3581E7421D274F1C00CA7F37 /* AppDelegate.m in Sources */,
 				357C72421D3497880017D004 /* Pods.m in Sources */,
 				35C819351D27B84D00BC5642 /* ZOZolaZoomTransition.m in Sources */,
@@ -676,7 +671,6 @@
 				357C72551D349AFA0017D004 /* SettingsController.m in Sources */,
 				35C8192B1D27898000BC5642 /* MineViewController.m in Sources */,
 				35C8193F1D27DB3200BC5642 /* MeizhiDetailViewController.m in Sources */,
-				357C72321D348B540017D004 /* NJKWebViewProgress.m in Sources */,
 				357C724E1D349A4C0017D004 /* JLBaseViewController.m in Sources */,
 				357C723F1D3497770017D004 /* JLSettingSwitchItem.m in Sources */,
 				35C819311D27ABA100BC5642 /* MeizhiCCell.m in Sources */,

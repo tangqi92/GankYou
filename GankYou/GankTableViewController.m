@@ -10,7 +10,7 @@
 #import "GankModel.h"
 #import "GankNetAPIManager.h"
 #import "GankTableViewController.h"
-#import "GankWebViewController.h"
+#import "GankWebBroswer.h"
 
 // 每页加载的大小
 static const NSInteger kPageSize = 10;
@@ -184,14 +184,9 @@ static NSInteger flag = 0;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES]; // 取消选中
     GankModel *gankModel = self.dataSource[indexPath.row];
-
     DebugLog(@"gankURL: %@", gankModel.url);
-
-    GankWebViewController *webViewVC = [[GankWebViewController alloc] init];
-    webViewVC.gankURL = gankModel.url;
-    webViewVC.gankTitle = gankModel.desc;
+    [GankWebBroswer openWebWithURLString:gankModel.url];
     [self hideTabBar:self.tabBarController];
-    [self.navigationController pushViewController:webViewVC animated:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

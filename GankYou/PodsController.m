@@ -9,7 +9,7 @@
 #import "PodsController.h"
 #import "Pods.h"
 #import "PodsCell.h"
-#import "GankWebViewController.h"
+#import "GankWebBroswer.h"
 
 @interface PodsController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -110,12 +110,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];// 取消选中
     Pods *pods = self.dataSource[indexPath.row];
-    // TODO:
-    GankWebViewController *webViewVC = [[GankWebViewController alloc] init];
-    webViewVC.gankTitle = pods.podsName;
-    webViewVC.gankURL = pods.podsURL;
+    [GankWebBroswer openWebWithURLString:pods.podsURL];
     [self hideTabBar:self.tabBarController];
-    [self.navigationController pushViewController:webViewVC animated:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

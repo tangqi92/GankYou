@@ -10,6 +10,7 @@ pod 'MJRefresh'
 pod 'MJExtension'
 pod 'Masonry'
 pod 'WMPageController'
+pod 'KINWebBrowser'
 
 end
 
