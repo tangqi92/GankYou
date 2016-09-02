@@ -78,7 +78,7 @@ static const NSInteger kPageSize = 10;
 
     [self.collectionView.mj_header beginRefreshing];
 
-    // 上拉刷新
+    // 上拉加载
     self.collectionView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
         [[GankNetAPIManager sharedManager] request_GankData_WithType:@"福利" pageSize:kPageSize pageIndex:_pageIndex success:^(NSDictionary *dic) {
             _pageIndex++;
