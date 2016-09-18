@@ -10,6 +10,6 @@
 
 @interface GankWebBroswer : NSObject
 
-+(void)openWebWithURLString:(NSString *)url;
++ (void)openWebWithURLString:(NSString *)url;
 
 @end

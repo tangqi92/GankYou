@@ -11,6 +11,8 @@ pod 'MJExtension'
 pod 'Masonry'
 pod 'WMPageController'
 pod 'KINWebBrowser'
+pod 'ReactiveCocoa', '~> 2.5'
+pod 'SVProgressHUD'
 
 end
 
