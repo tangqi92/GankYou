@@ -113,19 +113,20 @@ static const NSInteger kPageSize = 10;
     GankModel *gank = [self.dataSource objectAtIndex:indexPath.row];
 
     // 1.
-    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:gank.url] placeholderImage:[UIImage imageNamed:@"loading"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        if (image) {
-            if (!CGSizeEqualToSize(gank.imageSize, image.size)) {
-                gank.imageSize = image.size;
-                // !!!: 一定要刷新
-                [collectionView reloadItemsAtIndexPaths:@[ indexPath ]];
-            }
-        }
-    }];
+//    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:gank.url] placeholderImage:[UIImage imageNamed:@"loading"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+//        if (image) {
+//            if (!CGSizeEqualToSize(gank.imageSize, image.size)) {
+//                gank.imageSize = image.size;
+//                // !!!: 一定要刷新
+//                [collectionView reloadItemsAtIndexPaths:@[ indexPath ]];
+//            }
+//        }
+//    }];
 
     //    // 2.
-    //    [cell setGankModel:model];
-    //    [collectionView reloadItemsAtIndexPaths:@[indexPath]];
+    [cell setGankModel:gank withCompleted:^{
+        [collectionView reloadItemsAtIndexPaths:@[ indexPath ]];
+    }];
     return cell;
 }
 

@@ -22,13 +22,14 @@
     return self;
 }
 
-#pragma mark - Setters
-
-- (void)setGankModel:(GankModel *)gankModel {
+- (void)setGankModel:(GankModel *)gankModel withCompleted:(finishBlock)finishBlock {
     [_imageView sd_setImageWithURL:[NSURL URLWithString:gankModel.url] placeholderImage:[UIImage imageNamed:@"loading"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         if (image) {
             if (!CGSizeEqualToSize(gankModel.imageSize, image.size)) {
                 gankModel.imageSize = image.size;
+                if (finishBlock) {
+                    finishBlock();
+                }
             }
         }
     }];

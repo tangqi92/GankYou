@@ -6,7 +6,6 @@
 //  Copyright © 2016 Tang Qi. All rights reserved.
 //
 
-#import "AFNetworking.h"
 #import <Foundation/Foundation.h>
 
 // 请求方法
@@ -28,8 +27,7 @@ typedef void (^requestFailureBlock)(NSError *error);
 
 + (instancetype)sharedManager;
 
-- (void)requestJsonDataWithPath:(NSString *)aPath
-                     withParams:(NSDictionary *)params
+- (void)requestJsonDataWithPath:(NSString *)aPath withParams:(NSDictionary *)params
                  withMethodType:(HTTPMethod)method
                     withSuccess:(requestSuccessBlock)success
                     withFailure:(requestFailureBlock)failure;

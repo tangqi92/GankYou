@@ -11,9 +11,14 @@
 #import "GankModel.h"
 #import <UIKit/UIKit.h>
 
+typedef void (^finishBlock)();
+
 @interface MeizhiCCell : UICollectionViewCell
 
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) GankModel *gankModel;
+
+
+- (void)setGankModel:(GankModel *)gankModel withCompleted:(finishBlock)finishBlock;
 
 @end

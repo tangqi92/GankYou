@@ -9,6 +9,7 @@
 #import "SettingsController.h"
 #import "PodsController.h"
 #import "GankModel.h"
+#import "GankWebBroswer.h"
 
 @interface SettingsController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -146,7 +147,8 @@ static NSString *const kCellLogOutID = @"LogOutCell";
                 
                 break;
             case 1:
-                
+                [GankWebBroswer openWebWithURLString:@"https://github.com/tangqi92/GankYou"];
+                [self hideTabBar:self.tabBarController];
                 break;
             case 2: {
                 PodsController *podsVC = [[PodsController alloc] init];
