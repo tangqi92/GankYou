@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "RootTabBarController.h"
+#import "UIImage+Appearance.h"
 
 @interface AppDelegate ()
 
@@ -67,8 +68,14 @@
  *  自定义导航栏
  */
 - (void)customNaviBar {
+    
     // 设置导航栏背景颜色
-    [[UINavigationBar appearance] setBarTintColor:kColorMain];
+    UIImage * backgroundImage = [UIImage navigationBackgroundImage];
+    UIImage * seperatorImage = [UIImage seperatorShadowImage];
+    
+    [[UINavigationBar appearance] setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setShadowImage:seperatorImage];
+    
     // 返回按钮颜色
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     // 标题颜色
