@@ -15,6 +15,7 @@
 + (void)openWebWithURLString:(NSString *)url {
     KINWebBrowserViewController *webBrowser = [KINWebBrowserViewController webBrowser];
     webBrowser.tintColor = [UIColor whiteColor];
+    webBrowser.barTintColor = kColorMain;
     webBrowser.hidesBottomBarWhenPushed = YES;
     webBrowser.extendedLayoutIncludesOpaqueBars = NO;
     webBrowser.edgesForExtendedLayout = UIRectEdgeBottom;

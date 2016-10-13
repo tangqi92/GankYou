@@ -37,7 +37,7 @@
 }
 
 - (void)awakeFromNib {
-    [super initWithStyle:UITableViewStyleGrouped];
+    [super awakeFromNib];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -46,15 +46,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setNavigation];
     [self setTopView];
     // 状态栏关键
     self.automaticallyAdjustsScrollViewInsets = NO;
-}
-
--(void)setNavigation {
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    [self setNeedsStatusBarAppearanceUpdate];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
