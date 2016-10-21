@@ -8,6 +8,7 @@
 
 #import "GankModel.h"
 #import "MeizhiDetailViewController.h"
+#import "MeizhiHUD.h"
 
 @interface MeizhiDetailViewController () <UIGestureRecognizerDelegate, UIScrollViewDelegate>
 
@@ -55,6 +56,36 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     //    CGFloat offsetY = scrollView.contentOffset.y;
     // 该判断是实现scrollView内部的子控件悬停效果
+}
+
+- (NSArray<id<UIPreviewActionItem>> *)previewActionItems {
+    // setup a list of preview actions
+    UIPreviewAction *actionLike = [UIPreviewAction
+                                actionWithTitle:@"喜欢"
+                                style:UIPreviewActionStyleDefault
+                                handler:^(UIPreviewAction *_Nonnull action,
+                                          UIViewController *_Nonnull previewViewController) {
+                                    [MeizhiHUD popupErrorMessage:@"Not yet~"];
+                                }];
+    
+    UIPreviewAction *actionCollection = [UIPreviewAction
+                                actionWithTitle:@"收藏"
+                                style:UIPreviewActionStyleDefault
+                                handler:^(UIPreviewAction *_Nonnull action,
+                                          UIViewController *_Nonnull previewViewController) {
+                                    [MeizhiHUD popupErrorMessage:@"Not yet~"];
+                                }];
+    
+    UIPreviewAction *actionSave = [UIPreviewAction
+                                actionWithTitle:@"保存"
+                                style:UIPreviewActionStyleDefault
+                                handler:^(UIPreviewAction *_Nonnull action,
+                                          UIViewController *_Nonnull previewViewController) {
+                                    [MeizhiHUD popupErrorMessage:@"Not yet~"];
+                                }];
+    
+    NSArray *actions = @[ actionLike, actionCollection, actionSave ];
+    return actions;
 }
 
 @end

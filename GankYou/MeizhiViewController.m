@@ -11,16 +11,18 @@
 #import "MeizhiDetailViewController.h"
 #import "MeizhiViewController.h"
 #import "ZOZolaZoomTransition.h"
+#import "MineViewController.h"
 #import <CHTCollectionViewWaterfallLayout.h>
 
 static const NSInteger kPageSize = 10;
 
-@interface MeizhiViewController () <UICollectionViewDataSource, UINavigationControllerDelegate, ZOZolaZoomTransitionDelegate, CHTCollectionViewDelegateWaterfallLayout>
+@interface MeizhiViewController () <UICollectionViewDataSource, UINavigationControllerDelegate, ZOZolaZoomTransitionDelegate, CHTCollectionViewDelegateWaterfallLayout, UIViewControllerPreviewingDelegate>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) MeizhiCCell *selectedCell;
 @property (nonatomic, strong) NSMutableArray *dataSource;
 @property (nonatomic, assign) NSInteger pageIndex;
+@property (nonatomic, strong) MeizhiDetailViewController *currentPreviewController;
 
 @end
 
@@ -31,6 +33,7 @@ static const NSInteger kPageSize = 10;
 
     CHTCollectionViewWaterfallLayout *waterFallLayout = [[CHTCollectionViewWaterfallLayout alloc] init];
     // 设置边距
+    waterFallLayout.minimumInteritemSpacing = 10;
     waterFallLayout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
 
     self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:waterFallLayout];
@@ -41,6 +44,16 @@ static const NSInteger kPageSize = 10;
     [self.view addSubview:self.collectionView];
 
     self.navigationController.delegate = self;
+    
+    //Register 3D touch event - sourceView 为 self.view 所以不需要在 cellForItemAtIndexPath 重复注册，否则会导致运行卡顿
+    if ([self respondsToSelector:@selector(traitCollection)]) {
+        if ([self.traitCollection respondsToSelector:@selector(forceTouchCapability)]) {
+            if (self.traitCollection.forceTouchCapability==UIForceTouchCapabilityAvailable) {
+                [self registerForPreviewingWithDelegate:self
+                                             sourceView:self.view];
+            }
+        }
+    }
 
     [self initRefresh];
 }
@@ -232,6 +245,28 @@ static const NSInteger kPageSize = 10;
               relativeToView:(UIView *)relativeView {
 
     return [supplementaryView convertRect:supplementaryView.bounds toView:relativeView];
+}
+
+#pragma UIViewControllerPreviewingDelegate methods - Peek
+- (nullable UIViewController *)previewingContext:(id <UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location
+{
+    if ([self.presentedViewController isKindOfClass:[MeizhiDetailViewController class]]) {
+        return nil;
+    }else{
+        // http://stackoverflow.com/questions/33002637/3d-touch-peek-and-pop-from-uitableviewcell-how-to-hand-over-data-to-other-uiview
+        CGPoint cellPostion = [self.collectionView convertPoint:location fromView:self.view];
+        NSIndexPath *indexPath = [self.collectionView
+                                  indexPathForItemAtPoint:cellPostion];
+        GankModel *gank = self.dataSource[indexPath.row];
+        self.currentPreviewController = [[MeizhiDetailViewController alloc] initWithMeizhi:gank];
+        return self.currentPreviewController;
+    }
+}
+
+//Pop
+- (void)previewingContext:(id <UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit {
+    [self.navigationController pushViewController:self.currentPreviewController animated:YES];
+    [self hideTabBar:self.tabBarController];
 }
 
 @end
