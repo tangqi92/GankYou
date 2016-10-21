@@ -18,7 +18,6 @@ typedef void (^finishBlock)();
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) GankModel *gankModel;
 
-
 - (void)setGankModel:(GankModel *)gankModel withCompleted:(finishBlock)finishBlock;
 
 @end
