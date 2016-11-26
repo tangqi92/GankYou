@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "RootTabBarController.h"
 #import "UIImage+Appearance.h"
+#import <UIDevice-Hardware.h>
+#import "MeizhiHUD.h"
 
 @interface AppDelegate ()
 
@@ -37,6 +39,10 @@
     
     [self customNaviBar];
     
+    if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
+
+        [MeizhiHUD popupErrorMessage:@"Not yet~"];
+    }
     // 显示窗口
     [self.window makeKeyAndVisible];
     return YES;
