@@ -12,10 +12,12 @@
 @implementation MeizhiHUD
 
 + (void)popupErrorMessage:(NSString *)errorMessage {
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
     [SVProgressHUD showErrorWithStatus:errorMessage];
 }
 
 + (void)popupSuccessMessage:(NSString *)successMessage {
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
     [SVProgressHUD showSuccessWithStatus:successMessage];
 }
 
@@ -23,9 +25,11 @@
 {
     SVProgressHUDMaskType maskType = SVProgressHUDMaskTypeNone;
     if (!enableUserInteraction) {
-        maskType = SVProgressHUDMaskTypeBlack;
+        maskType = SVProgressHUDMaskTypeClear;
     }
-    [SVProgressHUD showWithStatus:message maskType:maskType];
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    [SVProgressHUD showWithStatus:message];
+    [SVProgressHUD setDefaultMaskType:maskType];
 }
 
 @end
