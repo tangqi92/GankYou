@@ -20,6 +20,7 @@
 		357C724E1D349A4C0017D004 /* JLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C724D1D349A4C0017D004 /* JLBaseViewController.m */; };
 		357C72521D349AA70017D004 /* UIScrollView+PullBig.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C72511D349AA70017D004 /* UIScrollView+PullBig.m */; };
 		357C72551D349AFA0017D004 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C72541D349AFA0017D004 /* SettingsController.m */; };
+		35805FE91E62E3660065ACD8 /* MeizhiPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 35805FE81E62E3660065ACD8 /* MeizhiPhotoBrowser.m */; };
 		3581E73F1D274F1C00CA7F37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3581E73E1D274F1C00CA7F37 /* main.m */; };
 		3581E7421D274F1C00CA7F37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3581E7411D274F1C00CA7F37 /* AppDelegate.m */; };
 		3581E74A1D274F1C00CA7F37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3581E7491D274F1C00CA7F37 /* Assets.xcassets */; };
@@ -89,6 +90,8 @@
 		357C72511D349AA70017D004 /* UIScrollView+PullBig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+PullBig.m"; sourceTree = "<group>"; };
 		357C72531D349AFA0017D004 /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
 		357C72541D349AFA0017D004 /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
+		35805FE71E62E3660065ACD8 /* MeizhiPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeizhiPhotoBrowser.h; sourceTree = "<group>"; };
+		35805FE81E62E3660065ACD8 /* MeizhiPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeizhiPhotoBrowser.m; sourceTree = "<group>"; };
 		3581E73A1D274F1C00CA7F37 /* GankYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GankYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3581E73E1D274F1C00CA7F37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3581E7401D274F1C00CA7F37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -405,6 +408,8 @@
 				35C819321D27B83000BC5642 /* Transition */,
 				35E9E0721DB9F69E00EA34B1 /* MeizhiHUD.h */,
 				35E9E0731DB9F69E00EA34B1 /* MeizhiHUD.m */,
+				35805FE71E62E3660065ACD8 /* MeizhiPhotoBrowser.h */,
+				35805FE81E62E3660065ACD8 /* MeizhiPhotoBrowser.m */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -670,6 +675,7 @@
 				357C72451D3498720017D004 /* SettingsCell.m in Sources */,
 				35C819391D27B8EA00BC5642 /* GankNetAPIManager.m in Sources */,
 				35C8192E1D27AB2500BC5642 /* GankModel.m in Sources */,
+				35805FE91E62E3660065ACD8 /* MeizhiPhotoBrowser.m in Sources */,
 				357C72521D349AA70017D004 /* UIScrollView+PullBig.m in Sources */,
 				357C723D1D3497770017D004 /* JLSettingGroup.m in Sources */,
 				35DDB27B1D7965F700D8DE17 /* UIViewController+TopViewController.m in Sources */,

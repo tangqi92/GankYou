@@ -13,6 +13,7 @@
 #import "ZOZolaZoomTransition.h"
 #import "MineViewController.h"
 #import <CHTCollectionViewWaterfallLayout.h>
+#import "MeizhiPhotoBrowser.h"
 
 static const NSInteger kPageSize = 10;
 
@@ -149,10 +150,10 @@ static const NSInteger kPageSize = 10;
     // !!!: 必须有这一句，为了下面 UINavigationControllerDelegate
     self.selectedCell = (MeizhiCCell *) [collectionView cellForItemAtIndexPath:indexPath];
     GankModel *gank = [self.dataSource objectAtIndex:indexPath.row];
-    MeizhiDetailViewController *detailController = [[MeizhiDetailViewController alloc] initWithMeizhi:gank];
-
-    [self.navigationController pushViewController:detailController animated:YES];
-    [self hideTabBar:self.tabBarController];
+    [MeizhiPhotoBrowser browserPhotoWithURL:[NSURL URLWithString:gank.url] fromView:self.selectedCell];
+//    MeizhiDetailViewController *detailController = [[MeizhiDetailViewController alloc] initWithMeizhi:gank];
+//    [self.navigationController pushViewController:detailController animated:YES];
+//    [self hideTabBar:self.tabBarController];
 }
 
 #pragma mark - CHTCollectionViewDelegateWaterfallLayout
