@@ -11,34 +11,42 @@
 #import "UIImage+Appearance.h"
 #import <UIDevice-Hardware.h>
 #import "MeizhiHUD.h"
-
+#ifdef DEBUG
+#import <FLEX/FLEXManager.h>
+#import <PonyDebugger.h>
+#endif
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+// Override point for customization after application launch.
+
+#ifdef DEBUG
+    [[FLEXManager sharedManager] showExplorer];
+    [self ponyDebugSwitchOn];
+#endif
+
     // 创建窗口
     self.window = [[UIWindow alloc] initWithFrame:kScreen_Bounds];
-    self.window.backgroundColor =[UIColor whiteColor];
-    
+    self.window.backgroundColor = [UIColor whiteColor];
+
     RootTabBarController *rootTabbar = [[RootTabBarController alloc] init];
     self.window.rootViewController = rootTabbar;
-    
+
     // 网络状态监测
     [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         DebugLog(@"Reachability: %@", AFStringFromNetworkReachabilityStatus(status));
     }];
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
-    
+
     // SDWebImage 加载数据类型
     [[[SDWebImageManager sharedManager] imageDownloader] setValue:@"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" forHTTPHeaderField:@"Accept"];
-    
+
     [self customNaviBar];
-    
+
     if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
 
         [MeizhiHUD popupErrorMessage:@"Not yet~"];
@@ -74,22 +82,51 @@
  *  自定义导航栏
  */
 - (void)customNaviBar {
-    
+
     // 设置导航栏背景颜色
-    UIImage * backgroundImage = [UIImage navigationBackgroundImage];
-    UIImage * seperatorImage = [UIImage seperatorShadowImage];
-    
+    UIImage *backgroundImage = [UIImage navigationBackgroundImage];
+    UIImage *seperatorImage = [UIImage seperatorShadowImage];
+
     [[UINavigationBar appearance] setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
     [[UINavigationBar appearance] setShadowImage:seperatorImage];
-    
+
     // 返回按钮颜色
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     // 标题颜色
     NSDictionary *navbarTitleTextAttributes = [NSDictionary
-                                               dictionaryWithObjectsAndKeys:[UIColor whiteColor],
-                                               NSForegroundColorAttributeName, nil];
+        dictionaryWithObjectsAndKeys:[UIColor whiteColor],
+                                     NSForegroundColorAttributeName, nil];
     [[UINavigationBar appearance] setTitleTextAttributes:navbarTitleTextAttributes];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 }
+
+#ifdef DEBUG
+- (void)ponyDebugSwitchOn {
+    PDDebugger *debugger = [PDDebugger defaultInstance];
+
+    // Enable Network debugging, and automatically track network traffic that comes through any classes that NSURLConnectionDelegate methods.
+    [debugger enableNetworkTrafficDebugging];
+    [debugger forwardAllNetworkTraffic];
+
+    // Enable Core Data debugging, and broadcast the main managed object context.
+    [debugger enableCoreDataDebugging];
+    //    [debugger addManagedObjectContext:self.managedObjectContext withName:@"Twitter Test MOC"];
+
+    // Enable View Hierarchy debugging. This will swizzle UIView methods to monitor changes in the hierarchy
+    // Choose a few UIView key paths to display as attributes of the dom nodes
+    [debugger enableViewHierarchyDebugging];
+    [debugger setDisplayedViewAttributeKeyPaths:@[ @"frame", @"hidden", @"alpha", @"opaque", @"accessibilityLabel", @"text" ]];
+
+    // Connect to a specific host
+    [debugger connectToURL:[NSURL URLWithString:@"ws://localhost:9000/device"]];
+    // Or auto connect via bonjour discovery
+    //[debugger autoConnect];
+    // Or to a specific ponyd bonjour service
+    //[debugger autoConnectToBonjourServiceNamed:@"MY PONY"];
+
+    // Enable remote logging to the DevTools Console via PDLog()/PDLogObjects().
+    [debugger enableRemoteLogging];
+}
+#endif
 
 @end

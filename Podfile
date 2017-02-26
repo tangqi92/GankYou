@@ -15,7 +15,8 @@ pod 'WMPageController'
 pod 'KINWebBrowser'
 pod 'UIDevice-Hardware'
 pod 'IDMPhotoBrowser'
-pod 'Fabric'
+pod 'FLEX'
+pod 'PonyDebugger', :git => 'https://github.com/square/PonyDebugger.git'
 
 end
 
