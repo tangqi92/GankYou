@@ -47,7 +47,7 @@ static GankNetAPIClient *manager = nil;
     // 解决乱码问题
     aPath = [aPath stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     switch (method) {
-        case GET: {
+        case HTTPMethodGET: {
             // TODO: 所有 Get 请求，增加缓存机制
             [self GET:aPath parameters:params progress:nil success:^(NSURLSessionTask *task, NSDictionary *responseObject) {
                 DebugLog(@"JSON: %@", responseObject);
@@ -59,7 +59,7 @@ static GankNetAPIClient *manager = nil;
                 }];
             break;
         }
-        case POST: {
+        case HTTPMethodPOST: {
             [self POST:aPath parameters:params progress:nil success:^(NSURLSessionTask *task, NSDictionary *responseObject) {
                 DebugLog(@"JSON: %@", responseObject);
                 success(responseObject);

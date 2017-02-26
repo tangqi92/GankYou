@@ -9,13 +9,13 @@
 #import <Foundation/Foundation.h>
 
 // 请求方法
-typedef enum {
-    GET = 0,
-    POST,
-    PUT,
-    DELETE,
-    HEAD
-} HTTPMethod;
+typedef NS_ENUM(NSInteger, HTTPMethod) {
+    HTTPMethodGET = 0,
+    HTTPMethodPOST,
+    HTTPMethodPUT,
+    HTTPMethodDELETE,
+    HTTPMethodHEAD
+};
 
 // 请求成功回调 block
 typedef void (^requestSuccessBlock)(NSDictionary *dic);

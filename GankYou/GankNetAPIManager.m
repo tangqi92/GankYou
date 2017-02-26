@@ -20,7 +20,7 @@ static GankNetAPIManager *manager = nil;
     return manager;
 }
 
-- (void)request_GankData_WithType:(NSString *)type
+- (void)requestGankDataWithType:(NSString *)type
                          pageSize:(NSInteger)pageSize
                         pageIndex:(NSInteger)pageIndex
                           success:(requestSuccessBlock)success
@@ -28,7 +28,7 @@ static GankNetAPIManager *manager = nil;
     // 获取网络数据
     NSString *urlEnCode = [NSString stringWithFormat:@"http://gank.io/api/data/%@/%zd/%zd", type, pageSize, pageIndex];
     DebugLog(@"URL: %@", urlEnCode);
-    [[GankNetAPIClient sharedManager] requestJsonDataWithPath:urlEnCode withParams:nil withMethodType:GET withSuccess:^(NSDictionary *dic) {
+    [[GankNetAPIClient sharedManager] requestJsonDataWithPath:urlEnCode withParams:nil withMethodType:HTTPMethodGET withSuccess:^(NSDictionary *dic) {
         DebugLog(@"Success: %@", dic);
         success(dic);
     }

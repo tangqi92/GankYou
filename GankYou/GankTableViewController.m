@@ -88,7 +88,7 @@ static NSInteger flag = 0;
 - (void)loadNewGanks {
     _pageIndex = 1;
     flag = 0;
-    [[GankNetAPIManager sharedManager] request_GankData_WithType:_gankDataType pageSize:kPageSize pageIndex:_pageIndex success:^(NSDictionary *dic) {
+    [[GankNetAPIManager sharedManager] requestGankDataWithType:_gankDataType pageSize:kPageSize pageIndex:_pageIndex success:^(NSDictionary *dic) {
         if (flag == 1) {
             return;
         }
@@ -118,7 +118,7 @@ static NSInteger flag = 0;
 
 - (void)loadMoreGanks {
     flag = 1;
-    [[GankNetAPIManager sharedManager] request_GankData_WithType:_gankDataType pageSize:kPageSize pageIndex:_pageIndex success:^(NSDictionary *dic) {
+    [[GankNetAPIManager sharedManager] requestGankDataWithType:_gankDataType pageSize:kPageSize pageIndex:_pageIndex success:^(NSDictionary *dic) {
         if (flag == 0) {
             return;
         }

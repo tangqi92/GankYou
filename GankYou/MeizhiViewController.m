@@ -71,7 +71,7 @@ static const NSInteger kPageSize = 10;
     // 下拉刷新
     self.collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         _pageIndex = 1;
-        [[GankNetAPIManager sharedManager] request_GankData_WithType:@"福利" pageSize:kPageSize pageIndex:_pageIndex success:^(NSDictionary *dic) {
+        [[GankNetAPIManager sharedManager] requestGankDataWithType:@"福利" pageSize:kPageSize pageIndex:_pageIndex success:^(NSDictionary *dic) {
             _pageIndex++;
             // 字典转模型
             NSMutableArray *dataArray = [GankModel mj_objectArrayWithKeyValuesArray:dic[@"results"]];
@@ -94,7 +94,7 @@ static const NSInteger kPageSize = 10;
 
     // 上拉加载
     self.collectionView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
-        [[GankNetAPIManager sharedManager] request_GankData_WithType:@"福利" pageSize:kPageSize pageIndex:_pageIndex success:^(NSDictionary *dic) {
+        [[GankNetAPIManager sharedManager] requestGankDataWithType:@"福利" pageSize:kPageSize pageIndex:_pageIndex success:^(NSDictionary *dic) {
             _pageIndex++;
             // 字典转模型
             NSMutableArray *dataArray = [GankModel mj_objectArrayWithKeyValuesArray:dic[@"results"]];

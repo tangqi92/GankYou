@@ -20,7 +20,7 @@ typedef void (^requestFailureBlock)(NSError *error);
 
 #pragma mark - GetGankData
 
-- (void)request_GankData_WithType:(NSString *)type
+- (void)requestGankDataWithType:(NSString *)type
                          pageSize:(NSInteger)pageSize
                         pageIndex:(NSInteger)pageIndex
                           success:(requestSuccessBlock)success
