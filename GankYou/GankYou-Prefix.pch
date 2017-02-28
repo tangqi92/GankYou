@@ -31,6 +31,7 @@
 #define kScreen_Width [UIScreen mainScreen].bounds.size.width
 
 #define kColorMain [UIColor colorWithRed:0.93 green:0.26 blue:0.38 alpha:1]
+#define kColorTabbarBackground [UIColor colorWithWhite:248.0f / 255.0f alpha:1.0f]
 #define kColorTabbarItemTitleNormal [UIColor colorWithRed:0.66 green:0.71 blue:0.76 alpha:1]
 #define kColorTabbarItemTitleSelected kColorMain
 #define kColorTitleColorNormal kColorMain

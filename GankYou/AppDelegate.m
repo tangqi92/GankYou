@@ -33,9 +33,12 @@
     self.window = [[UIWindow alloc] initWithFrame:kScreen_Bounds];
     self.window.backgroundColor = [UIColor whiteColor];
 
-    RootTabBarController *rootTabbar = [[RootTabBarController alloc] init];
-    self.window.rootViewController = rootTabbar;
-
+    RootTabBarController *rootTabBarController = [[RootTabBarController alloc] init];
+    // Tabbar 背景颜色
+    rootTabBarController.tabBar.barTintColor = kColorTabbarBackground;
+    rootTabBarController.tabBar.translucent = NO;
+    self.window.rootViewController = rootTabBarController;
+    
     // 网络状态监测
     [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         DebugLog(@"Reachability: %@", AFStringFromNetworkReachabilityStatus(status));
@@ -84,11 +87,14 @@
 - (void)customNaviBar {
 
     // 设置导航栏背景颜色
-    UIImage *backgroundImage = [UIImage navigationBackgroundImage];
-    UIImage *seperatorImage = [UIImage seperatorShadowImage];
+    UIImage *navigationBackgroundImage = [UIImage navigationBackgroundImage];
+    UIImage *tabBarBackgroundImage = [UIImage tabBarBackgroundImage];
 
-    [[UINavigationBar appearance] setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
-    [[UINavigationBar appearance] setShadowImage:seperatorImage];
+    [[UINavigationBar appearance] setBackgroundImage:navigationBackgroundImage forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setShadowImage:[UIImage new]];
+    
+    [[UITabBar appearance] setBackgroundImage:tabBarBackgroundImage];
+    [[UITabBar appearance] setShadowImage:[UIImage new]];
 
     // 返回按钮颜色
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];

@@ -25,8 +25,16 @@
     return [UIImage imageWithColor:kColorMain size:CGSizeMake(1, 1)];
 }
 
-+ (UIImage *)seperatorShadowImage {
++ (UIImage *)tabBarBackgroundImage {
+    return [UIImage imageWithColor:[UIColor whiteColor] size:CGSizeMake(1, 1)];
+}
+
++ (UIImage *)navigationSeperatorShadowImage {
     return [UIImage imageWithColor:[UIColor colorWithWhite:.0 alpha:0.12] size:CGSizeMake(kScreen_Width, 1)];
+}
+
++ (UIImage *)tabBarSeperatorShadowImage {
+    return [UIImage imageWithColor:[UIColor whiteColor] size:CGSizeMake(kScreen_Width, 1)];
 }
 
 @end

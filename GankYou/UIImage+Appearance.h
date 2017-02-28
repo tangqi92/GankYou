@@ -11,6 +11,8 @@
 @interface UIImage (Appearance)
 
 + (UIImage *)navigationBackgroundImage;
-+ (UIImage *)seperatorShadowImage;
++ (UIImage *)tabBarBackgroundImage;
++ (UIImage *)navigationSeperatorShadowImage;
++ (UIImage *)tabBarSeperatorShadowImage;
 
 @end

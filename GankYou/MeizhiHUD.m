@@ -21,8 +21,7 @@
     [SVProgressHUD showSuccessWithStatus:successMessage];
 }
 
-+ (void)popupLoadingMessage:(NSString *)message enableUserInteraction:(BOOL)enableUserInteraction
-{
++ (void)popupLoadingMessage:(NSString *)message enableUserInteraction:(BOOL)enableUserInteraction {
     SVProgressHUDMaskType maskType = SVProgressHUDMaskTypeNone;
     if (!enableUserInteraction) {
         maskType = SVProgressHUDMaskTypeClear;
