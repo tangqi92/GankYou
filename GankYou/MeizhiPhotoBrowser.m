@@ -38,7 +38,7 @@
                                                       animatedFromView:fromView];
     browser.displayToolbar = NO;
     browser.displayDoneButton = NO;
-    //    browser.dismissOnTouch = YES;
+    browser.dismissOnTouch = YES;
     browser.forceHideStatusBar = YES;
     browser.usePopAnimation = YES;
     [[UIViewController topViewController].navigationController presentViewController:browser

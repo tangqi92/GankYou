@@ -14,7 +14,7 @@ pod 'Masonry'
 pod 'WMPageController', :git =>'https://github.com/wangmchn/WMPageController.git'
 pod 'KINWebBrowser'
 pod 'UIDevice-Hardware'
-pod 'IDMPhotoBrowser'
+pod 'IDMPhotoBrowser', :git =>'https://github.com/thiagoperes/IDMPhotoBrowser.git', :commit => '19ed055392801160f71acfa06a7da1bbb27345bf'
 pod 'FLEX'
 pod 'PonyDebugger', :git => 'https://github.com/square/PonyDebugger.git'
 
